@@ -15,11 +15,8 @@ stories =
       , [ index "todo-1"
             "2 ToDos"
             { list =
-                [ { index = 0, title = "hello world", done = False }
-                , { index = 0
-                  , title = "hello world, its really nice to meet you!"
-                  , done = True
-                  }
+                [ Index.todo 0 "hello world" False
+                , Index.todo 0 "hello world, its really nice to meet you!" True
                 ]
             }
         , index "todo-2" "0 ToDo" { list = [] }
